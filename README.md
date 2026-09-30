@@ -107,6 +107,4 @@ Backend tests cover source verification, fabricated citations, import deduplicat
 - [Qdrant Python client](https://python-client.qdrant.tech/)
 - [arXiv API manual](https://info.arxiv.org/help/api/user-manual.html)
 
-## Resume discussion
 
-Describe this implementation as a local literature research platform with a LangGraph evidence workflow, lexical vector retrieval in Qdrant, optional model synthesis, and deterministic citation provenance checks. Be ready to explain the difference between quote validation and semantic entailment, why extraction is the no-key fallback, and what production scaling would require. Do not claim measured accuracy improvements, semantic embeddings, or production deployment without doing that additional work.
