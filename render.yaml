@@ -1,0 +1,12 @@
+# Render Blueprint: Dashboard -> New -> Blueprint -> pick this repo.
+# Optional after deploying: Environment tab -> add APP_PASSWORD to make the site private.
+# Do NOT add LLM_API_KEY unless APP_PASSWORD is set (see DEPLOY_GUIDE.md).
+services:
+  - type: web
+    name: researchpilot
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: DATA_DIR
+        value: /app/data
